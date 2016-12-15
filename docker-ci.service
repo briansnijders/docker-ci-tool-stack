@@ -1,0 +1,13 @@
+[Unit]
+Description=Docker CI Service
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker-compose -f /home/brian/Projects/DOCKER/docker-ci-tool-stack/docker-compose.yml up
+ExecStop=/usr/bin/docker-compose -f /home/brian/Projects/DOCKER/docker-ci-tool-stack/docker-compose.yml stop
+
+[Install]
+WantedBy=multi-user.target
+
