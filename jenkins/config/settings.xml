@@ -3,6 +3,12 @@
 
     <servers>
       <server>
+        <id>hippo-maven2-enterprise</id>
+        <username>bsnijders</username>
+        <password>ltpiFWU5wH3CEbbIJSAq</password>
+      </server>
+
+      <server>
         <id>nexus-release-repository</id>
         <username>admin</username>
         <password>admin123</password>
